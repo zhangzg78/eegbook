@@ -29,8 +29,8 @@ fprintf('Calculating Morlet Wavelet Transform ... ')
 if size(x,2)==1; x = x.'; end
 x = detrend(x,'linear'); % remove linear trends
 
-N_F = length(f); % number of time samples
-N_T = length(x); % number of frequency bins
+N_F = length(f); % number of frequency bins
+N_T = length(x); % number of time samples
 f = f/Fs;     % normalized frequency
 
 S = single(zeros(N_F,N_T)); % define the size of output 
